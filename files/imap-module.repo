@@ -1,0 +1,5 @@
+[imap-module]
+name=A first try of IMAP module
+baseurl=https://phracek.fedorapeople.org/imap-module-repo/
+enabled=1
+gpgcheck=0

@@ -1,0 +1,31 @@
+document: modulemd
+version: 1
+data:
+    summary: A first try of IMAP module
+    description: An efarly-stage module of IMAP - a postfix and dovecot IMAP server
+    license:
+      module: [ MIT ]
+      dependecies:
+        buildrequires:
+          base-runtime: master
+        requires:
+          base-runtime: master
+      references:
+        community: https://fedoraproject.org/wiki/Modularity
+        documentation: https://github.com/container-images/postfix
+        tracker: https://github.com/container-images/postfix
+      profiles:
+        default:
+          rpms:
+            - postfix
+            - dovecot
+      api:
+        rpms:
+          - postfix
+          - dovecot
+      components:
+        rpm:
+          postfix:
+            ref: f25
+          dovecot:
+            ref: f25
